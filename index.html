@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guppy Gems - Rare Guppies from Budapest</title>
+    <!-- Favicon - You can replace this with your own guppy icon -->
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Tailwind CSS CDN for modern and responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS for additional styling and overrides -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font - Inter for a clean, modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <img src="./images/guppyGems.png" alt="Guppy Gems Logo" class="rounded-full w-10 h-10 object-cover">
+                <span class="text-2xl font-bold text-teal-600">Guppy Gems</span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-teal-600 font-medium transition-colors">Home</a>
+                <a href="#our-guppies" class="text-gray-600 hover:text-teal-600 font-medium transition-colors">Our Guppies</a>
+                <a href="#about-us" class="text-gray-600 hover:text-teal-600 font-medium transition-colors">About Us</a>
+                <a href="#care-tips" class="text-gray-600 hover:text-teal-600 font-medium transition-colors">Care & Tips</a>
+                <a href="#ai-tool" class="text-gray-600 hover:text-teal-600 font-medium transition-colors">AI Tool</a>
+                <a href="#contact-us" class="text-gray-600 hover:text-teal-600 font-medium transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-teal-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2">
+            <a href="#home" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Home</a>
+            <a href="#our-guppies" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Our Guppies</a>
+            <a href="#about-us" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">About Us</a>
+            <a href="#care-tips" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Care & Tips</a>
+            <a href="#ai-tool" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">AI Tool</a>
+            <a href="#contact-us" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg text-white py-20 px-4 text-center rounded-b-lg shadow-md">
+            <div class="container mx-auto">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
+                    Discover <span class="text-yellow-300">Rare Guppy Gems</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto opacity-90">
+                    Your premier source for high-quality, ethically bred guppy strains in Budapest, Hungary.
+                </p>
+                <a href="#our-guppies" class="btn-secondary">
+                    View Our Current Stock
+                </a>
+            </div>
+        </section>
+
+        <!-- Our Guppies Section -->
+        <section id="our-guppies" class="py-16 px-4 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-teal-700 mb-12">Our Guppy Gems Collection</h2>
+                <p class="text-lg text-center text-gray-600 mb-10 max-w-3xl mx-auto">
+                    Explore some of the exquisite guppy strains we lovingly breed. Each fish is a testament to vibrant health and unique genetics, raised with meticulous care in our Budapest facility. Availability changes, so please contact us for the latest stock!
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Guppy Card 1: Red Dragon Guppy -->
+                    <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden transform transition duration-300 card-hover">
+                        <img src="./images/red-dragon-guppy.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FF0000/FFFFFF?text=Red+Dragon+Guppy+Fallback';" alt="Red Dragon Guppy" class="w-full h-64 object-cover image-placeholder">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-teal-700 mb-2">Red Dragon Guppy</h3>
+                            <p class="text-gray-700 text-base mb-4">
+                                Introducing the magnificent Red Dragon Guppy, a true aquatic jewel with a fiery presence. Adorned with a vibrant, metallic red body that transitions into a striking, expansive fan tail, this strain commands attention. Its robust and active demeanor makes it a dynamic centerpiece, constantly captivating with its graceful movements and brilliant hues.
+                            </p>
+                            <p class="text-lg font-bold text-teal-600 mb-2">Price: €50 / pair</p>
+                            <p class="text-sm text-gray-500">Availability: Limited Stock</p>
+                            <a href="#contact-us" class="btn-primary inline-block text-base mt-4">Inquire Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Guppy Card 2: Moscow Blue Guppy -->
+                    <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden transform transition duration-300 card-hover">
+                        <img src="./images/moscow-blue-guppy.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/0000FF/FFFFFF?text=Moscow+Blue+Guppy+Fallback';" alt="Moscow Blue Guppy" class="w-full h-64 object-cover image-placeholder">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-teal-700 mb-2">Moscow Blue Guppy</h3>
+                            <p class="text-gray-700 text-base mb-4">
+                                Behold the Moscow Blue Guppy, a vision of deep sapphire elegance that glides through the water with effortless grace. Its entire body shimmers with an intense, iridescent blue, complemented by a broad, flowing delta tail that fans out majestically. With a peaceful yet engaging temperament, this guppy is an ideal choice for bringing serene beauty to any community aquarium.
+                            </p>
+                            <p class="text-lg font-bold text-teal-600 mb-2">Price: €45 / pair</p>
+                            <p class="text-sm text-gray-500">Availability: Good Stock</p>
+                            <a href="#contact-us" class="btn-primary inline-block text-base mt-4">Inquire Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Guppy Card 3: Emerald Green Guppy -->
+                    <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden transform transition duration-300 card-hover">
+                        <img src="./images/emerald-green-guppy.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/008000/FFFFFF?text=Emerald+Green+Guppy+Fallback';" alt="Emerald Green Guppy" class="w-full h-64 object-cover image-placeholder">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-teal-700 mb-2">Emerald Green Guppy</h3>
+                            <p class="text-gray-700 text-base mb-4">
+                                Prepare to be enchanted by the Emerald Green Guppy, a living jewel that glows with an unparalleled metallic green hue. Its striking color extends through its entire body and is perfectly complemented by a large, flowing finnage that mimics a dancer's veil. Active and captivating, this strain adds a touch of natural splendor and dynamic movement to your aquatic display.
+                            </p>
+                            <p class="text-lg font-bold text-teal-600 mb-2">Price: €55 / pair</p>
+                            <p class="text-sm text-gray-500">Availability: Coming Soon</p>
+                            <a href="#contact-us" class="btn-primary inline-block text-base mt-4 opacity-50 cursor-not-allowed">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <p class="text-lg text-gray-700">
+                        Interested in a specific strain or want to see more? <br class="md:hidden">
+                        <a href="#contact-us" class="text-teal-600 hover:underline font-semibold">Contact us</a> for personalized assistance and the most up-to-date availability!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us" class="py-16 px-4 bg-teal-700 text-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-8">About Guppy Gems</h2>
+                <div class="max-w-4xl mx-auto leading-relaxed text-lg">
+                    <p class="mb-6">
+                        Welcome to Guppy Gems, your dedicated source for rare and high-quality guppy strains, lovingly bred right here in <strong>Budapest, Hungary</strong>. My passion for these vibrant fish drives everything I do, from careful genetic selection to ensuring optimal living conditions.
+                    </p>
+                    <p class="mb-6">
+                        At Guppy Gems, we believe in <strong>ethical breeding practices</strong>. This means providing our fish with spacious, clean aquariums, a balanced and nutritious diet, and a stress-free environment. Our commitment to their well-being ensures that every guppy you acquire from us is robust, healthy, and ready to thrive in your aquarium.
+                    </p>
+                    <p class="mb-6">
+                        We specialize in unique patterns and colors that you won't typically find in mass-market pet stores. Each "Guppy Gem" is a product of dedicated care and a meticulous breeding program aimed at preserving and enhancing the beauty of these amazing fish.
+                    </p>
+                    <p>
+                        Join our community of guppy enthusiasts and experience the joy of owning truly exceptional aquarium fish.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guppy Care & Tips Section -->
+        <section id="care-tips" class="py-16 px-4 bg-gray-50">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-teal-700 mb-12">Guppy Care & Breeding Tips</h2>
+                <p class="text-lg text-center text-gray-600 mb-10 max-w-3xl mx-auto">
+                    New to guppies or looking to improve your breeding success? Our guides cover essential topics to help your Guppy Gems thrive.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Tip 1 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 transform transition duration-300 card-hover">
+                        <h3 class="text-2xl font-semibold text-teal-700 mb-4">Essential Water Parameters for Thriving Guppies</h3>
+                        <p class="text-gray-700 text-base mb-4">
+                            Maintaining stable and appropriate water conditions is paramount for guppy health and breeding. Guppies prefer slightly alkaline water with a pH of 7.0-8.0 and moderately hard water. Consistent temperature between 24-27°C (75-80°F) is ideal. Regular water changes and monitoring ammonia, nitrite, and nitrate levels are crucial.
+                        </p>
+                        <a href="#" class="text-teal-600 hover:underline font-semibold">Read More (Coming Soon)</a>
+                    </div>
+                    <!-- Tip 2 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 transform transition duration-300 card-hover">
+                        <h3 class="text-2xl font-semibold text-teal-700 mb-4">Feeding Your Guppies for Optimal Health and Color</h3>
+                        <p class="text-gray-700 text-base mb-4">
+                            A varied diet is key. Offer high-quality flake or pellet food as a staple. Supplement with live or frozen foods like brine shrimp, daphnia, or bloodworms for extra nutrition and to enhance their vibrant colors. For fry, specialized fry food or finely crushed flakes are necessary. Feed small amounts multiple times a day.
+                        </p>
+                        <a href="#" class="text-teal-600 hover:underline font-semibold">Read More (Coming Soon)</a>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <p class="text-lg text-gray-700">
+                        Have a specific question about guppy care or breeding? <br class="md:hidden">
+                        <a href="#contact-us" class="text-teal-600 hover:underline font-semibold">Reach out to us!</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Guppy Description Generator Section -->
+        <section id="ai-tool" class="py-16 px-4 bg-teal-800 text-white">
+            <div class="container mx-auto text-center max-w-4xl">
+                <h2 class="text-4xl font-bold mb-8">AI Guppy Description Generator ✨</h2>
+                <p class="text-lg mb-8 leading-relaxed">
+                    Let our AI help you craft engaging and unique descriptions for your rare guppy strains. Simply provide a few details!
+                </p>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg text-gray-800">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="guppy-strain-name" class="block text-left text-gray-700 text-sm font-bold mb-2">Guppy Strain Name:</label>
+                            <input type="text" id="guppy-strain-name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="e.g., Galaxy Koi Guppy">
+                        </div>
+                        <div>
+                            <label for="guppy-primary-color" class="block text-left text-gray-700 text-sm font-bold mb-2">Primary Color:</label>
+                            <input type="text" id="guppy-primary-color" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="e.g., Blue, Red, Yellow, Multi-color">
+                        </div>
+                        <div>
+                            <label for="guppy-fin-type" class="block text-left text-gray-700 text-sm font-bold mb-2">Fin Type:</label>
+                            <input type="text" id="guppy-fin-type" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="e.g., Delta, Fan, Lyretail, Dumbo Ear">
+                        </div>
+                        <div>
+                            <label for="guppy-temperament" class="block text-left text-gray-700 text-sm font-bold mb-2">Temperament:</label>
+                            <input type="text" id="guppy-temperament" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="e.g., Peaceful, Active, Hardy">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="guppy-rarity" class="block text-left text-gray-700 text-sm font-bold mb-2">Rarity/Unique Trait (Optional):</label>
+                            <input type="text" id="guppy-rarity" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="e.g., Extremely rare, Unique pattern, Large size">
+                        </div>
+                    </div>
+                    <button id="generate-description-btn" class="btn-primary">
+                        Generate Description ✨
+                    </button>
+                    <div id="loading-indicator" class="mt-4 hidden text-teal-600 font-semibold">Generating...</div>
+                    <div class="mt-8 p-4 bg-gray-50 rounded-lg border border-gray-200 text-left">
+                        <h4 class="text-xl font-semibold text-teal-700 mb-3">Generated Description:</h4>
+                        <p id="generated-guppy-description" class="text-gray-700 italic">Your generated description will appear here...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact-us" class="py-16 px-4 bg-teal-800 text-white">
+            <div class="container mx-auto text-center max-w-3xl">
+                <h2 class="text-4xl font-bold mb-8">Get Your Guppy Gems!</h2>
+                <p class="text-lg mb-8 leading-relaxed">
+                    We are excited for you to bring the beauty of Guppy Gems to your home! As a home-based breeder in <strong>Budapest, Hungary</strong>, our primary sales method is <strong>local pickup by appointment</strong>.
+                </p>
+                <p class="text-lg mb-8 leading-relaxed">
+                    For your convenience, we can also arrange <strong>personal delivery within Budapest for a small fee</strong>. Please note that due to strict <strong>EU regulations regarding the online sale and cross-border shipping of live animals</strong>, we are currently unable to offer international shipping. Our focus is on serving the vibrant aquarium community right here in Hungary.
+                </p>
+
+                <form id="contact-form" class="bg-white p-8 rounded-xl shadow-lg text-gray-800">
+                    <h3 class="text-2xl font-semibold mb-6 text-teal-700">Inquire About Our Guppies</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-left text-gray-700 text-sm font-bold mb-2">Name:</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-left text-gray-700 text-sm font-bold mb-2">Email:</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-left text-gray-700 text-sm font-bold mb-2">Your Message (e.g., specific guppy strain inquiry, pickup request):</label>
+                        <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-400" placeholder="I'm interested in the Red Dragon Guppies..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        Send Message
+                    </button>
+                    <p class="text-gray-600 text-xs mt-4">
+                        (Note: This form is for demonstration. For a live website, you'd integrate it with a backend service like Formspree or Netlify Forms to receive messages.)
+                    </p>
+                </form>
+
+                <div class="mt-12">
+                    <h3 class="text-2xl font-semibold mb-4">You can also reach us directly:</h3>
+                    <p class="text-xl mb-2">Email: <a href="mailto:info@guppygems.hu" class="text-yellow-300 hover:underline">info@guppygems.hu</a></p>
+                    <p class="text-xl">Phone: <a href="tel:+36701234567" class="text-yellow-300 hover:underline">+36 70 123 4567</a> (Budapest, Hungary)</p>
+                    <p class="text-lg mt-4 opacity-90">Follow us on social media for updates on new arrivals!</p>
+                    <div class="flex justify-center space-x-6 mt-4">
+                        <a href="https://instagram.com/yourguppyinstagram" target="_blank" class="text-white hover:text-yellow-300 transition-colors">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 0C8.78 0 8.358.016 7.027.072 5.696.128 4.708.358 3.82.721 2.923 1.09 2.164 1.766 1.487 2.443.81 3.12.358 4.094.072 5.011.016 6.342 0 6.773 0 10.001v4c0 3.23.016 3.662.072 5.011.056 1.33.286 2.318.721 3.206.363.899 1.04 1.657 1.716 2.334.677.677 1.435 1.129 2.334 1.487.888.363 1.876.593 3.206.721 1.33.056 1.762.072 5.011.072h4c3.23 0 3.662-.016 5.011-.072 1.33-.056 2.318-.286 3.206-.721.899-.363 1.657-1.04 2.334-1.716.677-.677 1.129-1.435 1.487-2.334.363-.888.593-1.876.721-3.206.056-1.33.072-1.762.072-5.011v-4c0-3.23-.016-3.662-.072-5.011-.056-1.33-.286-2.318-.721-3.206-.363-.899-1.04-1.657-1.716-2.334-.677-.677-1.435-1.129-2.334-1.487-.888-.363-1.876-.593-3.206-.721-1.33-.056-1.762-.072-5.011-.072H12zM12 18a6 6 0 100-12 6 6 0 000 12zm0-2a4 4 0 110-8 4 4 0 010 8zm6.5-7.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <!-- Add more social media links if desired -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 px-4 text-center rounded-t-lg">
+        <div class="container mx-auto">
+            <p>&copy; <span id="current-year"></span> Guppy Gems. All rights reserved. Locally bred with passion in Budapest, Hungary.</p>
+            <div class="mt-4 text-sm text-gray-400">
+                <a href="#" class="hover:underline mx-2">Privacy Policy</a> |
+                <a href="#" class="hover:underline mx-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Go to top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

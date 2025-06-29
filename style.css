@@ -1,0 +1,75 @@
+ /* Custom font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Gradient background for hero section */
+        .hero-bg {
+            background: linear-gradient(135deg, #00BCD4 0%, #00796B 100%);
+        }
+        /* Specific styling for scroll-to-top button */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #00BCD4; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 50%; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add a subtle shadow */
+            transition: background-color 0.3s ease;
+        }
+        #scrollToTopBtn:hover {
+            background-color: #004D40; /* Darker shade on hover */
+        }
+        /* Professional button styles */
+        .btn-primary {
+      background: linear-gradient(to right, #14b8a6, #0f766e); /* from-teal-500 to-teal-700 */
+    color: #fff;
+    font-weight: bold;
+    padding: 0.75rem 2rem; /* py-3 px-8 */
+    border-radius: 9999px; /* rounded-full */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* shadow-md */
+    transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+    transform: scale(1);
+}
+.btn-primary:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* shadow-lg */
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: #fff;
+    color: #0f766e; /* text-teal-700 */
+    font-weight: bold;
+    padding: 0.75rem 2rem; /* py-3 px-8 */
+    border-radius: 9999px; /* rounded-full */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* shadow-md */
+    transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+    transform: scale(1);
+}
+.btn-secondary:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* shadow-lg */
+    transform: scale(1.05);
+}
+        /* Card hover effect with subtle depth */
+        .card-hover:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        /* Image loading placeholder styling */
+        .image-placeholder {
+            background-color: #e0e0e0; /* Light gray background */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #757575; /* Darker gray text */
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600; /* font-semibold */
+            text-align: center;
+        }
